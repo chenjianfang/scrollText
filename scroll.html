@@ -9,8 +9,24 @@
 <div class="scroll-ele">
 
 </div>
-<div class="add">add unshift</div>
-<div class="remove">remove shift</div>
+<div class="vertical">
+    
+</div>
 <script src="scroll.js"></script>
+<script>
+    //水平
+    var str = [];
+    let scrollData = ["你好啊","第一条数据","第二条数据","第3条数据","第4条数据","第5条数据","第6条数据","第7条数据"];
+
+    for(var i = 0; i < scrollData.length; i++){
+        str.push(`<li>${scrollData[i]}</li>`);
+    }
+    const scrollEntiry = new ScrollBox(str,".scroll-ele",['.scroll-box','.clearfix'],"ho");
+
+    //垂直
+    const scrollVertical = new ScrollBox(str,".vertical",['.vertical-box','.clearfix']);
+
+
+</script>
 </body>
 </html>
